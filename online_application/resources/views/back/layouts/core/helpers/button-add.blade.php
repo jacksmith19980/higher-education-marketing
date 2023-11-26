@@ -1,0 +1,1 @@
+<a class="btn btn-secondary" href="{{route( $route )}}"><i class="icon-plus"></i> {{__($text)}}</a>

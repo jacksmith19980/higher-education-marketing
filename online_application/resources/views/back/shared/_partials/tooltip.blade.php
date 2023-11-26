@@ -1,0 +1,1 @@
+data-toggle="tooltip" data-placement="{{isset($placement) ? $placement : 'top'}}" data-original-title="{{__($title)}}"

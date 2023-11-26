@@ -1,0 +1,22 @@
+{
+  "name" : "enumit/bambora",
+  "description" : "Bambora SDK for API v1.0.4",
+  "version" : "1.0.0",
+  "keywords" : ["Bambora", "payment", "API"],
+  "license" : "MIT",
+  "authors" : [
+    {
+      "name" : "Wei Deng",
+      "email" : "pukuidavy@gmail.com"
+    }
+  ],
+  "require": {
+    "php": ">=5.4",
+    "ext-curl": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "enumit\\Bambora\\": ["src/"]
+    }
+  }
+}

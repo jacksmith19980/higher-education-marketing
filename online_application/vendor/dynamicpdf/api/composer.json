@@ -1,0 +1,36 @@
+{
+    "name": "dynamicpdf/api",
+    "description": "PHP client library for the DynamicPDF Cloud API.",
+    "type": "library",
+    "keywords": [
+        "pdf",
+        "api",
+        "create",
+        "merge",
+        "report",
+        "form fill",
+        "encrypt"
+    ],
+    "homepage": "https://cloud.dynamicpdf.com/",
+    "require": {
+        "php": ">=7.3",
+        "ext-curl": "*",
+        "ext-fileinfo": "*"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "DynamicPDF\\Api\\": "src/"
+        }
+    },
+    "minimum-stability": "dev",
+    "authors": [
+        {
+            "name": "DynamicPDF API",
+            "email": "support@dynamicpdf.com"
+        }
+    ],
+    "require-dev": {
+        "phpunit/phpunit": "^9"
+    }
+}

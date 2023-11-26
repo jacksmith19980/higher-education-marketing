@@ -1,0 +1,344 @@
+
+//cta column
+//fix push right cta ...
+.cta-column{
+
+}
+
+//table card
+#applicant_table{
+    .btn-group:not(.more-optn-group){
+
+        .btn{
+        
+            margin-bottom: 3px;
+        }
+    }
+    @media screen and (max-width:991px){
+        .btn-group:not(.more-optn-group){
+            display: block;
+            margin-bottom: 3px;
+            .btn{
+                white-space: inherit !important;
+                text-align: left;
+                margin-bottom: 3px;
+            }
+            
+        }
+    }
+    
+}
+
+
+
+
+// =====================
+// Global Overrides 
+// =====================
+
+
+// override button-togler accordion plus -
+.btn-toggler{
+    &[aria-expanded="true"]{
+        i{
+            &.mdi-plus{
+                &:before{
+                    content: "\F374";
+                }
+            }
+        }
+    }
+}
+
+.nav-application{
+    .float-right-btn{
+        display: flex;
+        position: absolute;
+        right: 0;
+        top:0;
+        height: 24px;
+        width: 24px;
+        justify-content: center;
+        align-items: center;
+        border-radius: 0 0 0 100%;
+        background-color: var(--color-ablue) !important;
+        padding: 5px 3px !important;
+        border: none;
+       
+        &:hover,&:active,&:focus{
+            background-color: var(--color-ablue) !important;  
+        }
+        i{                     
+            font-size: 1.1rem;
+            margin-left: 7px;
+        }
+       
+    }
+    &.is-expanded{
+   
+        box-shadow:inset 0px 0px 0px 1px var(--color-ablue);
+        box-sizing: border-box;
+        border-radius: 8px 0 0 8px;
+        &:before{
+            background: var(--color-ablue) !important;
+        }
+    }
+
+    .application-header{
+        h5{
+            text-transform: uppercase;
+            font-size: 0.85rem;
+            font-weight: 400;
+        }
+    }
+    .af-column-title{
+        h4{
+            font-size: 1rem;
+            color:var(--color-secondary);
+            font-weight: 600;
+        }
+    }
+
+    .editable-btn{
+        background-color: var(--color-ablue);
+        padding:0;
+        position: relative;
+        padding-right: 5px;
+        .editable{
+            color:var(--color-light-1);
+            text-decoration: none !important;
+            border: none;
+            padding-top: 3px;
+            padding-bottom: 3px;
+            padding-left: 10px;
+            padding-right: 15px;
+            font-size: 0.85rem;
+        
+        }
+        i{
+            color:var(--color-light-1);
+            margin-left: 3px;
+            position: absolute;
+            right: 5px;
+            top:50%;
+            transform: translateY(-50%);
+            z-index: 3;
+        }
+    }
+}
+
+//Override all .nav-tabs remove background color and border for active 
+.nav-tabs{
+    .nav-link.active{
+        background: var(--color-grey-1);
+        border:none !important;
+    }
+}
+
+//add circle class to btngroup
+.more-optn-group{
+    &.is-circle{
+        .dropdown-toggle{
+            border-radius: 50% !important;
+            background: var(--color-light-1) !important;
+        }
+        
+    }
+}
+
+
+//override .review-page table
+
+.review-page{
+    .card-body{
+        width: 100%;
+        max-width: 100%;
+        overflow-x: auto;
+        table{
+            width: 100%;
+            max-width: 100%;
+        }
+    }
+}
+
+
+
+//Custom
+//global
+.application-statuses{
+    span{
+        font-size: 0.75rem;
+        i{
+            color:var(--color-secondary) !important;
+        }
+    }
+}
+
+//update filter header
+#datatableNewFilter{
+   
+    #lenContainer{
+        padding-left: 10px !important;
+
+        input,select{
+            display: block;
+            padding: 0.375rem 0.75rem;
+            font-size: 0.875rem;
+            line-height: 1.5;
+            color: #4F5467;
+            background-color: #fff;
+            background-clip: padding-box;
+            border: 1px solid #ccc;
+            border-radius: 2px;
+            transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+            height:35px;
+        }
+        select{
+            width: 70px;
+            margin-right: 10px;
+            padding-left: 10px !important;
+            padding-right: 10px !important;
+        }
+        input{
+            width: 100%;
+        }
+        .dataTables_filter{
+            flex-basis: auto;
+            flex-grow: 1;
+         
+            float: none !important;
+            margin:0;
+        }
+    }
+    #calContainer{
+        @media screen and (max-width:767px){
+            margin-top: 10px !important;
+            margin-bottom: 10px !important;
+        }
+        input[type="text"]{
+            height:35px;
+        }
+        .input-group-append{
+            
+            .input-group-text{
+                background-color: var(--color-ablue);
+                height:35px;
+            }
+        }
+        .input-group{
+            width: auto;
+            flex-basis: auto;
+            flex-grow: 1;
+        }
+        #clear_filter{
+            text-transform: uppercase;
+            color:var(--color-ablue) !important;
+            font-size: 12px !important;
+        }
+        #panel-toggle{
+            border:1px solid var(--color-ablue);
+            color:var(--color-ablue);
+            background-color: transparent;
+            height:35px;
+            &.is-active,&:hover{
+                background-color: var(--color-ablue);
+                color:var(--color-light-1);
+            }
+        }
+    }
+
+    #filterContainer{
+        .btn{
+            border:1px solid var(--color-ablue);
+            color:var(--color-ablue);
+            background-color: transparent;
+            height:35px;
+        }
+        .btn-group{
+            @media screen and (max-width:767px){
+               
+            }
+        }
+    }
+}
+
+.tab-pane.l-psuedu-border #datatableNewFilter #lenContainer{
+    padding-left: 0 !important;
+}
+//adjust textbox
+.dataTable {
+    .dtr-control{
+        input[type="checkbox"]{
+            margin-top: 7px;
+        }
+    }
+}
+
+.customizer{
+    #apply{
+        margin-top: 5px;
+        background-color: transparent !important;
+        border-color: var(--color-ablue) !important;
+        color:var(--color-ablue) !important;
+        text-transform: uppercase;
+        font-size: 13px  !important;
+        line-height: 12px !important;
+        i{
+            margin-left: 4px;
+        }
+        &:hover{
+            background-color: var(--color-ablue) !important;
+            color:var(--color-light-1) !important;
+            i{
+                color:var(--color-light-1);
+            }
+        }
+    }
+    .customizer-close-btn{
+        position: absolute;
+        right:3px;
+        top: 0;
+        z-index: 3;
+       i{
+        color:var(--color-ablue);
+        font-size: 1.15rem;
+       }
+    }
+
+    //mutilselect overrde
+    .multiselect-wrapper{
+        ul{
+            li{
+                &.active,&:hover{
+                    background-color: var(--color-ablue) !important;
+                }
+            }
+        }
+        .multiselect-count{
+            background-color: var(--color-ablue) !important;
+            color:var(--color-light-1) !important;
+        }
+    }
+}
+
+
+// search icon to data table search box
+.dataTables_filter{
+    input[type="search"]{
+        background-image: url(../images/icons/search-icon.svg);
+        background-position: center;
+        background-position-x:calc(100% - 10px);
+        background-size: 18px;
+        padding-right: 30px !important;
+        background-repeat: no-repeat;
+    }
+}
+
+//override progress abr
+.progressbar-container .c-progressbar-el{
+    height:14px !important;
+}
+.progressbar-container .c-progressbar-pcolor{
+    box-sizing: border-box !important;
+    padding-top:3px !important;
+}

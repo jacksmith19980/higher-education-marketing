@@ -1,0 +1,1 @@
+<span class="badge badge-pill badge-warning m-l-5">{{__('Upgrade')}}</span>

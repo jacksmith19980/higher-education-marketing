@@ -1,0 +1,1 @@
+<li>{{$label}} : {{$settings['school']['default_currency']}}{{$value}}</li>

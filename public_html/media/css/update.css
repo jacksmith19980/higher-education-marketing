@@ -1,0 +1,257 @@
+#applicant_table .btn-group:not(.more-optn-group) .btn {
+  margin-bottom: 3px;
+}
+@media screen and (max-width: 991px) {
+  #applicant_table .btn-group:not(.more-optn-group) {
+    display: block;
+    margin-bottom: 3px;
+  }
+  #applicant_table .btn-group:not(.more-optn-group) .btn {
+    white-space: inherit !important;
+    text-align: left;
+    margin-bottom: 3px;
+  }
+}
+
+.btn-toggler[aria-expanded=true] i.mdi-plus:before {
+  content: "\f374";
+}
+
+.nav-application .float-right-btn {
+  display: flex;
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 24px;
+  width: 24px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0 0 0 100%;
+  background-color: var(--color-ablue) !important;
+  padding: 5px 3px !important;
+  border: none;
+}
+.nav-application .float-right-btn:hover, .nav-application .float-right-btn:active, .nav-application .float-right-btn:focus {
+  background-color: var(--color-ablue) !important;
+}
+.nav-application .float-right-btn i {
+  font-size: 1.1rem;
+  margin-left: 7px;
+}
+.nav-application.is-expanded {
+  box-shadow: inset 0px 0px 0px 1px var(--color-ablue);
+  box-sizing: border-box;
+  border-radius: 8px 0 0 8px;
+}
+.nav-application.is-expanded:before {
+  background: var(--color-ablue) !important;
+}
+.nav-application .application-header h5 {
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  font-weight: 400;
+}
+.nav-application .af-column-title h4 {
+  font-size: 1rem;
+  color: var(--color-secondary);
+  font-weight: 600;
+}
+.nav-application .editable-btn {
+  background-color: var(--color-ablue);
+  padding: 0;
+  position: relative;
+  padding-right: 5px;
+}
+.nav-application .editable-btn .editable {
+  color: var(--color-light-1);
+  text-decoration: none !important;
+  border: none;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-left: 10px;
+  padding-right: 15px;
+  font-size: 0.85rem;
+}
+.nav-application .editable-btn i {
+  color: var(--color-light-1);
+  margin-left: 3px;
+  position: absolute;
+  right: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 3;
+}
+
+.nav-tabs .nav-link.active {
+  background: var(--color-grey-1);
+  border: none !important;
+}
+
+.more-optn-group.is-circle .dropdown-toggle {
+  border-radius: 50% !important;
+  background: var(--color-light-1) !important;
+}
+
+.review-page .card-body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: auto;
+}
+.review-page .card-body table {
+  width: 100%;
+  max-width: 100%;
+}
+
+.application-statuses span {
+  font-size: 0.75rem;
+}
+.application-statuses span i {
+  color: var(--color-secondary) !important;
+}
+
+#datatableNewFilter #lenContainer {
+  padding-left: 10px !important;
+}
+#datatableNewFilter #lenContainer input, #datatableNewFilter #lenContainer select {
+  display: block;
+  padding: 0.375rem 0.75rem;
+  font-size: 0.875rem;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 2px solid #eee;
+  border-radius: 5px;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  height: 45px;
+}
+#datatableNewFilter #lenContainer select {
+  width: 70px;
+  margin-right: 10px;
+  padding-left: 10px !important;
+  padding-right: 10px !important;
+}
+#datatableNewFilter #lenContainer input {
+  width: 100%;
+}
+#datatableNewFilter #lenContainer .dataTables_filter {
+  flex-basis: auto;
+  flex-grow: 1;
+  float: none !important;
+  margin: 0;
+}
+#datatableNewFilter #lenContainer .dataTables_filter input, #lenContainer select{
+  height: 45px;
+  border-radius: 5px;
+  border: 2px solid #eee;
+}
+
+@media screen and (max-width: 767px) {
+  #datatableNewFilter #calContainer {
+    margin-top: 10px !important;
+    margin-bottom: 10px !important;
+  }
+}
+#datatableNewFilter #calContainer input[type=text] {
+  height: 45px;
+}
+#datatableNewFilter #calContainer .input-group-append .input-group-text {
+  background-color: var(--color-ablue);
+  height: 45px;
+}
+#datatableNewFilter #calContainer .input-group {
+  width: auto;
+  flex-basis: auto;
+  flex-grow: 1;
+}
+#datatableNewFilter #calContainer #clear_filter {
+  text-transform: uppercase;
+  color: var(--color-ablue) !important;
+  font-size: 12px !important;
+}
+#datatableNewFilter #calContainer #panel-toggle {
+  border: 1px solid var(--color-ablue);
+  color: var(--color-ablue);
+  background-color: transparent;
+}
+#datatableNewFilter #calContainer #panel-toggle.is-active, #datatableNewFilter #calContainer #panel-toggle:hover {
+  background-color: var(--color-ablue);
+  color: var(--color-light-1);
+}
+#datatableNewFilter #filterContainer .btn {
+  border: 1px solid var(--color-ablue);
+  color: var(--color-ablue);
+  background-color: transparent;
+}
+.tab-pane.l-psuedu-border #datatableNewFilter #lenContainer {
+  padding-left: 0 !important;
+}
+
+.dataTable .dtr-control input[type=checkbox] {
+  margin-top: 7px;
+}
+
+.customizer #apply {
+  margin-top: 5px;
+  background-color: transparent !important;
+  border-color: var(--color-ablue) !important;
+  color: var(--color-ablue) !important;
+  text-transform: uppercase;
+  font-size: 13px !important;
+  line-height: 12px !important;
+}
+.customizer #apply i {
+  margin-left: 4px;
+}
+.customizer #apply:hover {
+  background-color: var(--color-ablue) !important;
+  color: var(--color-light-1) !important;
+}
+.customizer #apply:hover i {
+  color: var(--color-light-1);
+}
+.customizer .customizer-close-btn {
+  position: absolute;
+  right: 3px;
+  top: 0;
+  z-index: 3;
+}
+.customizer .customizer-close-btn i {
+  color: var(--color-ablue);
+  font-size: 1.15rem;
+}
+.customizer .multiselect-wrapper ul li.active, .customizer .multiselect-wrapper ul li:hover {
+  background-color: var(--color-ablue) !important;
+}
+.customizer .multiselect-wrapper .multiselect-count {
+  background-color: var(--color-ablue) !important;
+  color: var(--color-light-1) !important;
+}
+
+.dataTables_filter input[type=search] {
+  background-image: url(../images/icons/search-icon.svg);
+  background-position: center;
+  background-position-x: calc(100% - 10px);
+  background-size: 18px;
+  padding-right: 30px !important;
+  background-repeat: no-repeat;
+  height: 45px;
+  border-radius: 5px;
+  border: 2px solid #eee;
+}
+
+.searchicon {
+  background: transparent url(../images/icons/search-icon.svg) no-repeat 13px center;
+  background-size: 18px;
+  padding-right: 30px !important;
+  background-position-x: calc(100% - 10px);
+}
+
+.progressbar-container .c-progressbar-el {
+  height: 14px !important;
+}
+
+.progressbar-container .c-progressbar-pcolor {
+  box-sizing: border-box !important;
+  padding-top: 3px !important;
+}
+
+/*# sourceMappingURL=update.css.map */
